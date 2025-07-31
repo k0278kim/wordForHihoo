@@ -4,9 +4,11 @@ import EditPage from "./pages/EditPage.js";
 
 function App() {
   return (
-    <>
+    <div style={{
+      width: "100vw",
+    }}>
       <EditPage />
-    </>
+    </div>
   )
 }
 

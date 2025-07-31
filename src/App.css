@@ -48,7 +48,9 @@ body {
 td {
   border: 1px solid black;
   padding: 0;
-  height: 7mm
+  height: 7mm;
+  text-align: start;
+  padding-left: 2mm;
 }
 
 @media print {

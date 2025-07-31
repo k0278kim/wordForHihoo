@@ -39,7 +39,7 @@ const WordList = ({words, setIndexedWord, max_n, index}: wordlistProps) => {
               type={"text"}
               value={word}
               style={{
-                width: "70%",
+                width: "80%",
                 height: "80%",
                 border: "none",
                 textAlign: "start",

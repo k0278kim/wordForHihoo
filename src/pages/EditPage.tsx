@@ -115,9 +115,14 @@ const EditPage = () => {
         </button>
         <button onClick={() => {
           window.print();
-        }}>
+        }}
+                style={{
+                  backgroundColor: "#222",
+                  color: "white"
+                }}
+        >
           <div style={{ display: "flex", gap: 5, alignItems: "center" }}>
-            <img src={"/printer.svg"} alt={"출력"} style={{ width: "20px" }} />
+            <img src={"/printer.svg"} alt={"출력"} style={{ width: "20px", fill: "white" }} />
             출력
           </div>
         </button>

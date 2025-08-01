@@ -1,5 +1,6 @@
 import ResultPage from "./ResultPage";
 import {useState} from "react";
+import { motion } from "framer-motion";
 
 const EditPage = () => {
 
@@ -57,20 +58,32 @@ const EditPage = () => {
       <div style={{
         display: "flex",
       }}>
-        <button onClick={() => setMax_n(60)} style={{
-          fontWeight: 'bold',
-          backgroundColor: max_n === 60 ? "#222" : "transparent",
-          color: max_n === 60 ? "white" : "#222",
-          borderRadius: "50px 0 0 50px",
-          border: max_n === 60 ? "1px solid #222" : "1px solid lightgray"
-        }}>60개</button>
-        <button onClick={() => setMax_n(70)} style={{
-          fontWeight: 'bold',
-          backgroundColor: max_n === 70 ? "#222" : "transparent",
-          color: max_n === 70 ? "white" : "#222",
-          borderRadius: "0 50px 50px 0",
-          border: max_n === 70 ? "1px solid #222" : "1px solid lightgray"
-        }}>70개</button>
+        <motion.button
+          onClick={() => setMax_n(60)}
+          style={{
+            fontWeight: 'bold',
+            backgroundColor: max_n === 60 ? "#222" : "#22222200",
+            color: max_n === 60 ? "white" : "#222",
+            borderRadius: "50px 0 0 50px",
+            border: max_n === 60 ? "1px solid #222" : "1px solid lightgray",
+          }}
+          transition={{
+            duration: 0.5
+          }}
+        >60개</motion.button>
+        <motion.button
+          onClick={() => setMax_n(70)}
+          style={{
+            fontWeight: 'bold',
+            backgroundColor: max_n === 70 ? "#222" : "transparent",
+            color: max_n === 70 ? "white" : "#222",
+            borderRadius: "0 50px 50px 0",
+            border: max_n === 70 ? "1px solid #222" : "1px solid lightgray"
+          }}
+          transition={{
+            duration: 0.5
+          }}
+        >70개</motion.button>
       </div>
 
       <div style={{
